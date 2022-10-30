@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="{% static 'css\\App.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>DATMAP</title>
+
+</head>
+
+<body id="bg" style="background-image: url('{% static 'images\\skyline-day.jpg'%}');">
+
+<div id="blemish">
+<p style="text-align: center; font-size: 30px;">
+        Open a FLYXXX.csv file from your system to plot its course on the map.
+</p>
+
+<p>
+    If the flight log you have is in the form of a FLYXXX.DAT file, use dedicated DJI file parsers
+    like DROP (DRone Open source Parser) from the following link:
+    <a href="https://github.com/unhcfreg/DROP" target="_blank">https://github.com/unhcfreg/DROP</a>.
+    Follow the instructions given in the page and convert any FLYXXX.DAT file into it's corresponding .csv file.
+</p>
+
+<p>Browse File:</p>
+<form method="post" enctype="multipart/form-data" style="margin-left: 10px">
+    {% csrf_token %}
+    <input type="file" name="document" accept=".csv">
+    <button type="submit">Upload file</button>
+</form>
+
+<p>
+    If the map is emtpy, or some of the points are skipped. It is because the points have empty latitude and longitude values.
+    The flight log system does not update geolocation values unless a significant change in values is recorded. Therefore,
+    if a point is skipped over and/or the map is empty, it is because the Drone did not move too far from the last co-ordinate/
+    did not move at all.
+</p>
+
+<p>
+    You can save the Map as a "map.html" file by right-clicking on the map.
+</p>
+</div>
+
+</body>
+</html>

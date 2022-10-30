@@ -1,0 +1,21 @@
+
+#bg {
+    background-repeat: no-repeat;
+    background-size: 1800px 900px;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#blemish {
+  height: 450px;
+  background: hsl(0, 0%, 100%, 0.5);
+  border-radius: 10px;
+}
+
+p {
+    font-family:Bebas Neue;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    opacity: 0.85;
+}
