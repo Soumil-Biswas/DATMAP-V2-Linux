@@ -1,4 +1,4 @@
-# DATMAP-VS-Windows
+# DATMAP-VS-Linux
 
 A web service to plot the course of DJI Phantom Series Drones on the map. Version for Mac and Linux.
 
