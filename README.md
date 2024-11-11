@@ -2,9 +2,31 @@
 
 A web service to plot the course of DJI Phantom Series Drones on the map. Version for Mac and Linux.
 
+# Prerequisites
+
+To run this program in your system, the following software and libraries are required:
+
+Software:
+1. [Python version 3.12.2](https://www.python.org/downloads/)
+2. A code editor. Providing [VSCode](https://code.visualstudio.com/download) as an example. VSCode requires `Python` Extension to read and edit Python files.
+
+Python Libraries:
+
+1. Django
+2. Folium
+3. Pandas
+
+# Installing Libraries
+
+1. After installing Python, open a terminal/powershell at the `..\Website` folder and enter the command `pipenv install django`. Wait for the installlation to finish.
+2. Next, enter `pipenv install folium`. Wait for the installlation to finish.
+3. Finally, enter `pipenv install pandas`. Wait for the installlation to finish.
+
+If the procedure says `new version of ___ available`, you many ignore them.
+
 # Opening the Application
 
-1. Open the terminal in the `..\V2\Website` folder and enter the command `python manage.py runserver`.
+1. Open the terminal in the `..\Website` folder and enter the command `python manage.py runserver`.
 
 2. Use the provided Address in the form of `x.x.x.x` and open the URL in a browser to access the Website.
 
